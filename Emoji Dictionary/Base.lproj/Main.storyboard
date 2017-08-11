@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="812" y="26.53673163418291"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="0CK-l4-nPN">
             <objects>
-                <viewController id="TSt-ba-UXc" sceneMemberID="viewController">
+                <viewController id="TSt-ba-UXc" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RY9-0p-zku"/>
                         <viewControllerLayoutGuide type="bottom" id="VvB-Kr-bf6"/>
@@ -58,13 +58,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚓️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaQ-y8-kkO">
-                                <rect key="frame" x="94.5" y="60" width="186" height="204.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="171"/>
+                                <rect key="frame" x="75.5" y="104" width="224" height="246"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="206"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an Anchor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HC-xy-z2y">
-                                <rect key="frame" x="121.5" y="284.5" width="132" height="21"/>
+                                <rect key="frame" x="121.5" y="370" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -79,6 +79,9 @@
                             <constraint firstItem="4HC-xy-z2y" firstAttribute="top" secondItem="HaQ-y8-kkO" secondAttribute="bottom" constant="20" id="k4P-b5-9DS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="HaQ-y8-kkO" id="5DX-Py-DxC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gyr-mQ-jh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
