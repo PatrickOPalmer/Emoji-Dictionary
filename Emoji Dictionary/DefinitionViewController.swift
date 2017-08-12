@@ -11,6 +11,8 @@ import UIKit
 class DefinitionViewController: UIViewController {
     @IBOutlet weak var definitionLabel: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var birthLabel: UILabel!
 
     var emoji = "NO EMOJI"
 
@@ -21,21 +23,33 @@ class DefinitionViewController: UIViewController {
 
         if emoji == "😛" {
             definitionLabel.text = "A smiley with tongue"
+            categoryLabel.text = "Category: Smiley"
+            birthLabel.text = "2002"
         }
         if emoji == "🤡" {
             definitionLabel.text = "Aaaaa! Clown"
+            categoryLabel.text = "Category: Smiley"
+            birthLabel.text = "2013"
         }
         if emoji == "💩" {
             definitionLabel.text = "Poo!"
+            categoryLabel.text = "SCategory: Feces"
+            birthLabel.text = "2010"
         }
         if emoji == "😱" {
             definitionLabel.text = "Scared"
+            categoryLabel.text = "Category: Smiley"
+            birthLabel.text = "2014"
         }
         if emoji == "👁" {
             definitionLabel.text = "Eye see you"
+            categoryLabel.text = "Category: Face"
+            birthLabel.text = "2001"
         }
         if emoji == "☠️" {
             definitionLabel.text = "Death. Or Poison"
+            categoryLabel.text = "Category: Death"
+            birthLabel.text = "2013"
         }
         // Do any additional setup after loading the view.
     }
